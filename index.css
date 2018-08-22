@@ -1,0 +1,94 @@
+/* section {
+    margin: 0 auto;
+    display: flex;
+}
+
+.column {
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+section:nth-of-type(5) .column:first-of-type {
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 22px;
+}
+
+section:nth-of-type(6) .column:nth-of-type(2) {
+    flex-grow: 4;
+    flex-shrink: 4;
+    flex-basis: 66px;
+} */
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-1-12 {
+    width: 8.33%;
+}
+
+.col-2-12 {
+    width: 16.66%;
+}
+
+.col-3-12 {
+    width: 25%;
+}
+.col-4-12 {
+    width: 33.33%;
+}
+.col-5-12 {
+    width: 41.66%;
+}
+.col-6-12 {
+    width: 50%;
+}
+.col-7-12 {
+    width: 58.33%;
+}
+
+.col-8-12 {
+    width: 66.66%;
+}
+
+.col-9-12 {
+    width: 75%;
+}
+.col-10-12 {
+    width: 83.33%;
+}
+.col-11-12 {
+    width: 91.66%;
+}
+
+nav .row {
+    background-color: #1e9bd7;
+}
+
+nav .row:first-child {
+    margin-bottom: 1px;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 500px;
+    background-image: url(./assets/img/hero.jpg);
+}
+
+/*==============================Menu================================*/
+.menu {
+    margin-left: auto;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
