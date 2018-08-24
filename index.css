@@ -1,34 +1,32 @@
-/* section {
-    margin: 0 auto;
-    display: flex;
+@font-face {
+    font-family: KlavikaBold;
+    src: url(./assets/fonts/KlavikaWebBasicBold.eot);
+    src: url(./assets/fonts/KlavikaWebBasicBold.woff);
+}
+@font-face {
+    font-family: KlavikaLight;
+    src: url(./assets/fonts/KlavikaWebBasicLight.eot);
+    src: url(./assets/fonts/KlavikaWebBasicLight.woff);
+}
+@font-face {
+    font-family: KlavikaMedium;
+    src: url(./assets/fonts/KlavikaWebBasicMedium.eot);
+    src: url(./assets/fonts/KlavikaWebBasicMedium.woff);
+}
+@font-face {
+    font-family: KlavikaRegular;
+    src: url(./assets/fonts/KlavikaWebBasicRegular.eot);
+    src: url(./assets/fonts/KlavikaWebBasicRegular.woff);
 }
 
-.column {
-    margin: 10px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
+body {
+    font-family: "KlavikaRegular", sans-serif;
 }
-
-section:nth-of-type(5) .column:first-of-type {
-    flex-grow: 2;
-    flex-shrink: 2;
-    flex-basis: 22px;
-}
-
-section:nth-of-type(6) .column:nth-of-type(2) {
-    flex-grow: 4;
-    flex-shrink: 4;
-    flex-basis: 66px;
-} */
 .container {
     width: 100%;
     margin: 0 auto;
 }
-.row {
-    display: flex;
-    flex-direction: row;
-}
+
 .flex {
     display: flex;
 }
@@ -70,32 +68,290 @@ section:nth-of-type(6) .column:nth-of-type(2) {
     width: 91.66%;
 }
 
-nav .row {
+.gray {
+    color: #808080;
+}
+
+.offset-2-12 {
+    padding-left: 16.66%;
+}
+
+.full-width {
+    width: 100%;
+}
+/*==============================Menu================================*/
+.blue-background {
     background-color: #1e9bd7;
 }
 
-nav .row:first-child {
-    margin-bottom: 1px;
+.top-bar {
+    margin-bottom: 2px;
+}
+.top-title {
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
 }
 
-.hero-section {
-    width: 100%;
-    min-height: 500px;
-    background-image: url(./assets/img/hero.jpg);
+.main-menu-container {
+    padding: 15px 0;
+    align-items: center;
 }
-
-/*==============================Menu================================*/
 .menu {
     margin-left: auto;
 }
 
-li {
+.menu li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.menu a {
+    font-family: "KlavikaMedium", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0 25px;
+}
+
+.search-icon {
+    height: 30px;
+    width: 30px;
+    background: url(./assets/img/search.svg) no-repeat;
+}
+
+/*==============================Hero image and text================================*/
+
+.hero-section {
+    width: 100%;
+    min-height: 800px;
+    background-image: url(./assets/img/hero.jpg);
+    color: #fff;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs {
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.hero-text {
+    padding: 100px 0;
+}
+
+.hero-text header {
+    text-transform: uppercase;
+    font-family: "KlavikaMedium";
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "KlavikaLight";
+    font-size: 56px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.post-date {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.post-tags {
+    padding-top: 30px;
+}
+
+.tags {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-family: "KlavikaMedium";
+    font-size: 11px;
+    font-weight: 500;
+    margin: 4px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
     display: inline-block;
 }
 
-li a {
-    text-decoration: none;
+.split {
+    padding: 0 5px;
+}
+
+.tags:first-child {
+    margin-left: 0;
+}
+
+/*==============================Blog text================================*/
+main {
+    padding-top: 100px;
+}
+
+.blogTextWrapper {
+    padding-right: 60px;
+}
+
+h2 {
+    font-family: "KlavikaMedium";
+    font-size: 24px;
+}
+
+p {
+    font-family: "Baskerville";
+    font-size: 18px;
+    line-height: 2em;
+    text-align: left;
+    margin-top: 0;
+}
+
+.standoutContainer {
+    border: 1px solid #e2dfdf;
+    padding: 0 23px;
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+
+.standoutContainer h3 {
+    font-family: "KlavikaBold";
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 23px 0 10px;
+}
+
+.standoutContainer h4 {
+    font-family: "KlavikaMedium";
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.separator {
+    width: 300px;
+    height: 1px;
+    background-color: #e2dfdf;
+}
+
+.standoutContainer .row {
+    height: 94px;
+    align-items: center;
+}
+
+.thumb {
+    height: 60px;
+    width: 60px;
+}
+
+/*==============================Sidebar================================*/
+
+h3 {
+    font-family: "KlavikaBold";
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "KlavikaBold";
+    font-size: 15px;
+}
+
+h5 {
+    font-family: "KlavikaRegular";
+    font-size: 12px;
+}
+
+.downloadBtn {
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-family: "KlavikaBold";
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    width: 130px;
+    text-align: left;
+}
+
+.downloadBtn img {
+    height: 24px;
+    display: inline;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+.socialIcons {
+    padding: 0;
+}
+.socialIcons li {
+    list-style: none;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*==============================Footer================================*/
+
+footer {
     color: #fff;
+    padding: 30px;
+}
+
+footer .post {
+    padding: 15px;
+}
+
+footer .post:first-child {
+    padding-left: 0;
+}
+
+footer .post:last-child {
+    padding-right: 0;
+}
+
+footer h4 {
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    font-family: "KlavikaBold";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 200px;
+    background-color: #ebebeb;
+}
+
+footer .post-title {
+    font-family: "KlavikaLight";
+    font-size: 19px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+footer time {
+    font-family: "KlavikaRegular";
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 /*==============================Media queries================================*/
