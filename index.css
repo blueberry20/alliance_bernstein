@@ -21,6 +21,8 @@
 
 body {
     font-family: "KlavikaRegular", sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 .container {
     width: 100%;
@@ -29,6 +31,10 @@ body {
 
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 .col-1-12 {
     width: 8.33%;
@@ -76,21 +82,30 @@ body {
     padding-left: 16.66%;
 }
 
-.full-width {
-    width: 100%;
+.relative-position {
+    position: relative;
 }
+
 /*==============================Menu================================*/
+
+.menu {
+    display: block;
+}
+
+#hamburger-icon {
+    display: none;
+}
 .blue-background {
     background-color: #1e9bd7;
 }
 
 .top-bar {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 .top-title {
     color: #fff;
-    padding: 7px 0;
-    font-size: 14px;
+    padding: 10px 0;
+    font-size: 16px;
 }
 
 .main-menu-container {
@@ -99,6 +114,7 @@ body {
 }
 .menu {
     margin-left: auto;
+    display: flex;
 }
 
 .menu li {
@@ -111,14 +127,18 @@ body {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 14px;
-    padding: 0 25px;
+    font-size: 17px;
+    padding: 7px 0;
+    letter-spacing: 0.8px;
+}
+
+.menu a.active {
+    border-bottom: 2px solid #fff;
 }
 
 .search-icon {
-    height: 30px;
-    width: 30px;
-    background: url(./assets/img/search.svg) no-repeat;
+    height: 20px;
+    width: 20px;
 }
 
 /*==============================Hero image and text================================*/
@@ -198,7 +218,7 @@ h1 {
 
 /*==============================Blog text================================*/
 main {
-    padding-top: 100px;
+    padding: 100px 0 60px;
 }
 
 .blogTextWrapper {
@@ -206,12 +226,13 @@ main {
 }
 
 h2 {
-    font-family: "KlavikaMedium";
+    font-family: "KlavikaMedium", sans-serif;
     font-size: 24px;
+    margin-top: 2em;
 }
 
 p {
-    font-family: "Baskerville";
+    font-family: "Baskerville", serif;
     font-size: 18px;
     line-height: 2em;
     text-align: left;
@@ -227,16 +248,17 @@ p {
 }
 
 .standoutContainer h3 {
-    font-family: "KlavikaBold";
-    font-size: 15px;
+    font-family: "KlavikaBold", sans-serif;
+    font-size: 16px;
     text-transform: uppercase;
-    margin: 23px 0 10px;
+    margin: 30px 0 10px;
 }
 
 .standoutContainer h4 {
-    font-family: "KlavikaMedium";
+    font-family: "KlavikaMedium", sans-serif;
     font-size: 15px;
     margin-right: 20px;
+    width: 70%;
 }
 
 .separator {
@@ -257,40 +279,47 @@ p {
 
 /*==============================Sidebar================================*/
 
-h3 {
-    font-family: "KlavikaBold";
+.sidebar h3 {
+    font-family: "KlavikaBold", sans-serif;
     font-size: 15px;
     text-transform: uppercase;
+    margin-top: 5px;
 }
 
 h4 {
-    font-family: "KlavikaBold";
+    font-family: "KlavikaBold", sans-serif;
     font-size: 15px;
+    margin: 20px 0 10px;
 }
 
 h5 {
-    font-family: "KlavikaRegular";
+    font-family: "KlavikaRegular", sans-serif;
     font-size: 12px;
+    margin: 0;
 }
 
 .downloadBtn {
     border: 1px solid #000;
     text-transform: uppercase;
-    font-family: "KlavikaBold";
-    font-size: 13px;
-    height: 40px;
-    line-height: 40px;
+    font-family: "KlavikaBold", sans-serif;
+    font-size: 15px;
+    height: 44px;
+    line-height: 44px;
     position: relative;
-    width: 130px;
+    width: 100%;
     text-align: left;
+    padding: 0 15px;
+    cursor: pointer;
+    background-color: #fff;
+    margin-top: 30px;
 }
 
 .downloadBtn img {
     height: 24px;
     display: inline;
     position: absolute;
-    right: 5px;
-    top: 7px;
+    right: 15px;
+    top: 10px;
 }
 .socialIcons {
     padding: 0;
@@ -308,55 +337,78 @@ h5 {
     line-height: 50px;
 }
 
+icon:last-child {
+    border-bottom: none;
+}
+
 /*==============================Footer================================*/
 
 footer {
     color: #fff;
-    padding: 30px;
+    padding: 40px;
 }
 
 footer .post {
     padding: 15px;
+    width: calc(33.33% - 30px);
 }
 
 footer .post:first-child {
     padding-left: 0;
+    width: calc(33.33% - 15px);
 }
 
 footer .post:last-child {
     padding-right: 0;
+    width: calc(33.33% - 15px);
 }
 
 footer h4 {
     margin: 10px 0 20px;
     text-transform: uppercase;
-    font-family: "KlavikaBold";
-    font-size: 14px;
+    font-family: "KlavikaBold", sans-serif;
+    font-size: 16px;
     font-weight: 500;
+    letter-spacing: 0.8px;
 }
 
 .imagePlaceholder {
     width: 100%;
-    height: 200px;
+    height: 170px;
     background-color: #ebebeb;
 }
 
 footer .post-title {
-    font-family: "KlavikaLight";
-    font-size: 19px;
+    font-family: "KlavikaLight", sans-serif;
+    font-size: 23px;
     font-weight: 300;
-    margin: 10px 0;
+    margin: 13px 0;
 }
 
 footer time {
-    font-family: "KlavikaRegular";
+    font-family: "KlavikaRegular", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
 }
 
+.footer-nav {
+    margin: 100px 0 50px;
+    font-size: 15px;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /*==============================Media queries================================*/
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     .container {
         max-width: 540px;
     }
@@ -377,5 +429,186 @@ footer time {
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+} */
+.container {
+    width: 1140px;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        flex-direction: column;
+        background-color: #1e9bd7;
+        padding: 10px 0;
+    }
+    .menu li {
+        width: 100%;
+        list-style: none;
+        color: #fff;
+        text-align: center;
+    }
+
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        line-height: 40px;
+    }
+    #hamburger-icon {
+        display: block;
+        border: 1px solid #fff;
+        padding: 5px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    .sm-flex-wrap {
+        flex-wrap: wrap;
+    }
+    .sm-flex-column {
+        flex-direction: column;
+    }
+    .sm-100 {
+        width: 100%;
+    }
+    .sm-offset-0 {
+        padding-left: 0;
+    }
+    .sm-col-6-12 {
+        width: calc(50% - 15px) !important;
+    }
+    .hero-section {
+        width: 100%;
+        min-height: 500px;
+    }
+    .menu a {
+        font-size: 13px;
+    }
+    .menu li {
+        padding: 0 10px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        padding: 30px 0;
+    }
+    main {
+        padding: 40px 0;
+    }
+
+    .downloadBtn {
+        width: 200px;
+    }
+
+    .socialIcons li {
+        display: inline-block;
+    }
+    .icon {
+        border-bottom: 0;
+    }
+    .post:nth-child(odd) {
+        padding-left: 0;
+        padding-right: 15px;
+        padding-bottom: 30px;
+    }
+    .post:nth-child(even) {
+        padding-right: 0;
+        padding-left: 15px;
+        padding-bottom: 30px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+    footer .post-title {
+        font-size: 20px;
+    }
+
+    footer .flex {
+        text-align: center;
+    }
+
+    .blogTextWrapper {
+        order: 2;
+    }
+    .sidebar {
+        order: 1;
+    }
+    .menu a.active {
+        border: none;
+    }
+    .logo {
+        height: 44px;
+        width: 44px;
+    }
+
+    .top-title {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .xs-col-12 {
+        width: 100% !important;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .hero-text header {
+        font-size: 14px;
+    }
+
+    .tags:nth-child(odd) {
+        margin-left: 0;
+    }
+    main {
+        padding: 20px 0;
+    }
+    .downloadBtn {
+        margin-top: 20px;
+    }
+
+    .standoutContainer {
+        width: auto;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .post {
+        padding: 0 0 30px !important;
+    }
+
+    footer .post-title {
+        font-size: 18px;
+    }
+
+    .footer-nav li {
+        display: block;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .footer-nav {
+        margin: 50px 0 20px;
     }
 }

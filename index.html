@@ -5,12 +5,11 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>AB German and Austrian Financial Professionals</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
       <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
+    <!--==============Hero section====================-->
     <div class="hero-section">
         <div class="overlay">
                 <div class="top-bar blue-background">
@@ -18,19 +17,20 @@
                         AB | German & Austrian Financial Professionals
                     </div>
                 </div>
-                <div class="blue-background">
+                <div class="blue-background relative-position">
                     <div class="container flex main-menu-container">
                         <img class="logo" src="./assets/img/ab_bernstein_logo_detail.png" alt="Alliance Bernstein Logo" />
-                        <nav class="menu">
-                            <a href="#">Products</a>
-                            <a href="#">Resources</a>
-                            <a href="#">Team</a>
-                            <a href="#">Insights</a>
-                            <a href="#">About us</a>
-                            <div class="search-icon"></div>
-                            <!-- <img src="./assets/img/search.svg" alt="search icon"/> -->
-                        </nav>
+                        <!--==============Menu====================-->
+                        <ul class="menu">
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a class="active" href="#">Insights</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><img class="search-icon" src="./assets/img/search.jpg" alt="search icon"/></li>
+                        </ul>
                     </div>
+                    <img id="hamburger-icon" src="./assets/img/hamburger.svg" alt="hamburger icon"/>
                 </div>
 
             <div class="container">
@@ -52,10 +52,10 @@
     </div>
 
     <main>
-        <div class="container flex">
+        <div class="container flex sm-flex-column">
 
-            <div class="blogTextWrapper col-10-12">
-                <p class="offset-2-12">The recent stall-out in US bond yields has thrown equity investors into a funk. But, in our view, it’s a pause that refreshes. Remember, there are still powerfully supportive forces in play for the economy and stocks.</p>
+            <div class="blogTextWrapper col-10-12 sm-100">
+                <p class="offset-2-12 sm-offset-0">The recent stall-out in US bond yields has thrown equity investors into a funk. But, in our view, it’s a pause that refreshes. Remember, there are still powerfully supportive forces in play for the economy and stocks.</p>
 
                 <div class="standoutContainer">
                     <h3>More on Emerging Markets</h3>
@@ -75,15 +75,17 @@
                     </div>
                 </div>
 
-                <p class="offset-2-12">The eight-year bull market in equities owes much to the bunker mentality that has kept interest rates at some of the lowest levels ever. With every shock, investors ran for cover and loaded up on low-risk bonds. That has been wildly bullish for stocks. It not only allowed companies to borrow at superlow rates, but it also increased the relative attractiveness of dividend and earnings yields of stocks versus bonds. And though US growth has been disappointingly slow, it has been steady—and that has done a lot to heal the wounds of the crisis.</p>
+                <p class="offset-2-12 sm-offset-0">The eight-year bull market in equities owes much to the bunker mentality that has kept interest rates at some of the lowest levels ever. With every shock, investors ran for cover and loaded up on low-risk bonds. That has been wildly bullish for stocks. It not only allowed companies to borrow at superlow rates, but it also increased the relative attractiveness of dividend and earnings yields of stocks versus bonds. And though US growth has been disappointingly slow, it has been steady—and that has done a lot to heal the wounds of the crisis.</p>
                 <h2>Turning Point</h2>
-                <p class="offset-2-12">Enter 2017. Today, investors are pinning their hopes on faster economic growth and the higher rates that come with it. We don’t rely on such forecasts, but we didn’t dispute the consensus view that rates would head higher as reflationary forces driven by a stronger economy and pro-growth government policy proposals took hold. After all, the economy was still creating jobs and growing. Business conditions were quite strong, and the Republican sweep in November made the imminent passage of a big corporate tax cut more probable.</p>
-                <p class="offset-2-12">Indeed, the so-called reflation trade ran its course through February, when the 10-year US Treasury bond yield reached a high of 2.63%. But then everything changed. Some economic trends eased, commodity prices rolled over and dysfunction rather than bold action emanated from Washington, causing the 10-year yield to fall to 2.17%. Postelection laggards—notably quality growth and higher-yielding stocks—regained favor. Cyclical stocks that benefited from the Trump bump, including financials, corrected sharply. Bank stocks were especially hard hit, despite the US Federal Reserve’s official rate hike in March (Display).</p>
+                <p class="offset-2-12 sm-offset-0">Enter 2017. Today, investors are pinning their hopes on faster economic growth and the higher rates that come with it. We don’t rely on such forecasts, but we didn’t dispute the consensus view that rates would head higher as reflationary forces driven by a stronger economy and pro-growth government policy proposals took hold. After all, the economy was still creating jobs and growing. Business conditions were quite strong, and the Republican sweep in November made the imminent passage of a big corporate tax cut more probable.</p>
+                <p class="offset-2-12 sm-offset-0">Indeed, the so-called reflation trade ran its course through February, when the 10-year US Treasury bond yield reached a high of 2.63%. But then everything changed. Some economic trends eased, commodity prices rolled over and dysfunction rather than bold action emanated from Washington, causing the 10-year yield to fall to 2.17%. Postelection laggards—notably quality growth and higher-yielding stocks—regained favor. Cyclical stocks that benefited from the Trump bump, including financials, corrected sharply. Bank stocks were especially hard hit, despite the US Federal Reserve’s official rate hike in March (Display).</p>
             </div>
-            <div class="col-2-12">
+
+            <div class="sidebar col-2-12 sm-100">
                 <h3>Authors</h3>
                 <h4>by Kurt Feuerman</h4>
-                <h5>Portfolio Manager, Strategic Core Equities</h5>
+                <h5>Portfolio Manager</h5>
+                <h5>Strategic Core Equities</h5>
 
                 <button class="downloadBtn">White Paper
                     <img src="./assets/img/download.png" alt="download icon"/>
@@ -91,32 +93,32 @@
                 <ul class="socialIcons">
                     <li>
                         <a href="" class="icon">
-                            <img src="./assets/img/facebook.png" alt="Facebook icon"/>
+                            <img src="./assets/img/facebook.png" alt="Facebook"/>
                         </a>
                     </li>
                     <li>
                         <a href="" class="icon">
-                            <img src="./assets/img/linkedin.png" alt="LinkedIn icon"/>
+                            <img src="./assets/img/linkedin.png" alt="LinkedIn"/>
                         </a>
                     </li>
                     <li>
                         <a href="" class="icon">
-                            <img src="./assets/img/twitter.png" alt="Twitter icon"/>
+                            <img src="./assets/img/twitter.png" alt="Twitter"/>
                         </a>
                     </li>
                     <li>
                         <a href="" class="icon">
-                            <img src="./assets/img/youtube.png" alt="YouTube icon"/>
+                            <img src="./assets/img/youtube.png" alt="YouTube"/>
                         </a>
                     </li>
                     <li>
                         <a href="" class="icon">
-                            <img src="./assets/img/email.png" alt="email icon"/>
+                            <img src="./assets/img/email.png" alt="email"/>
                         </a>
                     </li>
                     <li>
                         <a href="" class="icon">
-                            <img src="./assets/img/print.png" alt="print icon"/>
+                            <img src="./assets/img/print.png" alt="print"/>
                         </a>
                     </li>
                 </ul>
@@ -127,29 +129,52 @@
     <footer class="blue-background">
         <div class="container">
             <h4>More for you</h4>
-            <div class="flex">
-                <div class="post col-4-12">
+            <div class="flex sm-flex-wrap">
+                <div class="post col-4-12 sm-col-6-12 xs-col-12">
                     <div class="imagePlaceholder"></div>
                     <div class="post-title">UN Sustainability Goals: A Road Map for Impact Investing</div>
                     <time>February 2, 2017</time>
                 </div>
-                <div class="post col-4-12">
+                <div class="post col-4-12 sm-col-6-12 xs-col-12">
                     <div class="imagePlaceholder"></div>
                     <div class="post-title">UN Sustainability Goals: A Road Map for Impact Investing</div>
                     <time>February 2, 2017</time>
                 </div>
-                <div class="post col-4-12">
+                <div class="post col-4-12 sm-col-6-12 xs-col-12">
                     <div class="imagePlaceholder"></div>
                     <div class="post-title">UN Sustainability Goals: A Road Map for Impact Investing</div>
                     <time>February 2, 2017</time>
                 </div>
-                <div class="post col-4-12">
+                <div class="post col-4-12 sm-col-6-12 xs-col-12">
                     <div class="imagePlaceholder"></div>
                     <div class="post-title">UN Sustainability Goals: A Road Map for Impact Investing</div>
                     <time>February 2, 2017</time>
                 </div>
             </div>
+            <nav class="footer-nav">
+                <li>&copy; 2017 AllianceBernstein L.P.</li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">(NYSE: AB)</a></li>
+            </nav>
         </div>
     </footer>
+
+
+<script>
+document.querySelector("#hamburger-icon").addEventListener("click", showMenu);
+
+function showMenu() {
+    let menu = document.querySelector(".menu");
+    console.log(menu.style.display);
+    if (menu.style.display == "none" || menu.style.display == "") {
+        console.log("none");
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
+</script>
+
 
 </body>
